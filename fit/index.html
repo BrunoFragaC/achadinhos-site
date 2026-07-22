@@ -20,31 +20,37 @@
   <!-- End Meta Pixel Code -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#ff7a59" />
+  <meta name="theme-color" content="#fd4b23" />
   <meta name="description" content="INFINITY RUN &amp; FIT — ofertas de tênis de corrida, roupa de academia, suplemento e acessórios de treino das principais lojas direto no grupo do WhatsApp. Entre grátis!" />
   <meta property="og:title" content="INFINITY RUN &amp; FIT — Ofertas de Corrida e Academia no WhatsApp" />
   <meta property="og:description" content="Tênis, legging, suplemento e smartwatch com desconto de verdade, direto no seu WhatsApp. Entre no grupo grátis!" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://achadinhosdajo10.com.br/fit/hero.jpg" />
   <title>INFINITY RUN &amp; FIT — Ofertas de Corrida e Academia no WhatsApp</title>
-  <link rel="icon" type="image/png" href="../logo.png" />
-  <link rel="apple-touch-icon" href="../logo.png" />
+  <!-- ícone próprio do INFINITY (o ../logo.png é o da Jô e não vale aqui) -->
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     *{ box-sizing:border-box; margin:0; padding:0; }
 
+    /* Paleta tirada direto do logo (amostrada pixel a pixel):
+       laranja #fd4b23 / #fe7727, lima #b6db13 / #8bbe02, navy #1c272e do "INFINITY".
+       O verde do WhatsApp (#25d366, esmeralda) segue exclusivo do botão — não se
+       confunde com o lima amarelado da marca. */
     :root{
-      --coral:#ff5f6d;
-      --coral-soft:#ffe1dc;
-      --tangerine:#ff9a44;
-      --ink:#22303f;
-      --muted:#6f8298;
-      --volt:#eaff8f;
-      --volt-ink:#5d7300;
-      --volt-line:#cbe86b;
-      --sky:#cfeeff;
+      --orange:#fd4b23;
+      --orange-soft:#ffe0d5;
+      --orange-ink:#c1360f;
+      --tangerine:#fe7727;
+      --lime-deep:#8bbe02;
+      --lime-soft:#eef8cd;
+      --lime-ink:#566f0a;
+      --lime-line:#cbe86b;
+      --ink:#1c272e;
+      --muted:#6c7a85;
       --whatsapp:#25d366;
       --whatsapp-dark:#1ebe5b;
       --line:rgba(255,255,255,.85);
@@ -61,12 +67,12 @@
       display:flex;align-items:flex-start;justify-content:center;
       padding:30px 16px 60px;
       background:
-        radial-gradient(55% 50% at 10% 6%,  #ffe3c9 0%, transparent 60%),
-        radial-gradient(55% 55% at 92% 10%, #cfeeff 0%, transparent 60%),
-        radial-gradient(60% 60% at 94% 94%, #d8f5e3 0%, transparent 60%),
-        radial-gradient(66% 60% at 6% 96%,  #ffd9d3 0%, transparent 60%),
-        radial-gradient(90% 80% at 50% 50%, #eaf4fb 0%, transparent 72%),
-        linear-gradient(135deg,#ffeede,#e4f1fb 45%,#ffe2dc 70%,#dbf3e6);
+        radial-gradient(55% 50% at 10% 6%,  #ffdcc8 0%, transparent 60%),
+        radial-gradient(55% 55% at 92% 10%, #edf8cb 0%, transparent 60%),
+        radial-gradient(60% 60% at 94% 94%, #ffe4d2 0%, transparent 60%),
+        radial-gradient(66% 60% at 6% 96%,  #e3f3c4 0%, transparent 60%),
+        radial-gradient(90% 80% at 50% 50%, #fdf5ec 0%, transparent 72%),
+        linear-gradient(135deg,#fff0e3,#f4f9e4 45%,#ffe5d5 70%,#e8f5d4);
     }
 
     .card{
@@ -75,12 +81,12 @@
       -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
       border:1px solid var(--line);
       border-radius:30px;overflow:hidden;
-      box-shadow:0 26px 64px -24px rgba(60,110,150,.55), 0 2px 10px rgba(34,48,63,.06);
+      box-shadow:0 26px 64px -24px rgba(160,90,40,.45), 0 2px 10px rgba(28,39,46,.06);
     }
 
-    /* banner */
+    /* banner — mesmo caminho de cor do risco laranja→lima embaixo do logo */
     .banner{
-      background:linear-gradient(100deg,var(--coral),var(--tangerine));
+      background:linear-gradient(100deg,var(--orange),var(--tangerine) 55%,var(--lime-deep));
       color:#fff;text-align:center;
       font-size:12.5px;font-weight:700;letter-spacing:.09em;
       padding:11px 14px;text-transform:uppercase;
@@ -93,14 +99,14 @@
     .hero{
       display:block;width:100%;height:auto;
       border-radius:24px;border:4px solid #fff;
-      box-shadow:0 0 0 3px var(--coral-soft), 0 16px 32px -12px rgba(60,110,150,.7);
+      box-shadow:0 0 0 3px var(--orange-soft), 0 16px 32px -12px rgba(160,90,40,.6);
     }
     /* enquanto o hero.jpg não estiver na pasta, mostra este bloco no lugar (nada de imagem quebrada) */
     .hero-fallback{
       display:none;width:100%;aspect-ratio:1/1;
       border-radius:24px;border:4px solid #fff;
-      box-shadow:0 0 0 3px var(--coral-soft), 0 16px 32px -12px rgba(60,110,150,.7);
-      background:linear-gradient(140deg,#ff8a5b,#ff5f6d 55%,#ff9a44);
+      box-shadow:0 0 0 3px var(--orange-soft), 0 16px 32px -12px rgba(160,90,40,.6);
+      background:linear-gradient(140deg,var(--orange),var(--tangerine) 55%,var(--lime-deep));
       flex-direction:column;align-items:center;justify-content:center;gap:6px;
       color:#fff;line-height:1.2;
     }
@@ -119,16 +125,6 @@
     }
     .check svg{ width:16px;height:16px;fill:#fff; }
 
-    /* marca do grupo (a arte do hero ainda vai reforçar isso) */
-    .wordmark{
-      display:flex;align-items:center;justify-content:center;gap:7px;
-      font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
-      background:linear-gradient(100deg,var(--coral),var(--tangerine));
-      -webkit-background-clip:text;background-clip:text;color:transparent;
-      margin:0 0 10px;
-    }
-    .wordmark .inf{ font-size:19px;line-height:1;letter-spacing:0; }
-
     /* título + badge */
     /* caixa alta ocupa ~15% mais largura que caixa baixa: por isso 23px (e não os
        26px da /baby) e letter-spacing neutro — senão o título estoura em 4 linhas. */
@@ -140,11 +136,11 @@
     /* raio menor que o da /baby de propósito: a frase daqui ocupa 2-3 linhas e um
        border-radius:999px viraria um losango. 18px mantém a cara de etiqueta. */
     .badge{
-      display:inline-block;background:var(--volt);color:var(--volt-ink);
+      display:inline-block;background:var(--lime-soft);color:var(--lime-ink);
       font-weight:600;font-size:13px;line-height:1.5;text-wrap:balance;
       text-transform:uppercase;letter-spacing:.02em;
       padding:11px 18px;border-radius:18px;
-      border:1px solid var(--volt-line);margin-bottom:22px;
+      border:1px solid var(--lime-line);margin-bottom:22px;
     }
 
     /* benefícios */
@@ -153,11 +149,13 @@
        600 e um respiro entre letras mantém legível sem inchar a lista. */
     .benefits li{
       display:flex;align-items:center;gap:12px;
-      font-size:13.5px;font-weight:600;line-height:1.35;color:#2f4256;
+      font-size:13.5px;font-weight:600;line-height:1.35;color:#37454f;
       text-transform:uppercase;letter-spacing:.02em;
     }
-    .tick{ flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--sky);display:flex;align-items:center;justify-content:center; }
-    .tick svg{ width:13px;height:13px;fill:none;stroke:#1683b5;stroke-width:3;stroke-linecap:round;stroke-linejoin:round; }
+    /* ticks em laranja (a outra cor da marca) e não em verde: assim o único verde
+       da página continua sendo o do botão do WhatsApp. */
+    .tick{ flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--orange-soft);display:flex;align-items:center;justify-content:center; }
+    .tick svg{ width:13px;height:13px;fill:none;stroke:var(--orange-ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round; }
 
     /* CTA WhatsApp */
     .cta{
@@ -188,14 +186,14 @@
     .notif{
       display:flex;align-items:center;gap:10px;
       background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
-      border:1px solid rgba(255,255,255,.9);border-left:4px solid var(--coral);
+      border:1px solid rgba(255,255,255,.9);border-left:4px solid var(--orange);
       border-radius:12px;padding:9px 12px;
-      box-shadow:0 10px 26px -12px rgba(34,48,63,.45);
+      box-shadow:0 10px 26px -12px rgba(28,39,46,.45);
       opacity:0;transform:translateX(120%);
       transition:opacity .45s ease,transform .45s cubic-bezier(.2,.8,.2,1);
     }
     .notif.show{ opacity:1;transform:translateX(0); }
-    .notif .av{ flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:var(--coral-soft);color:#d1465a;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px; }
+    .notif .av{ flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:var(--orange-soft);color:var(--orange-ink);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px; }
     .notif .tx{ font-size:12.5px;line-height:1.35;color:var(--ink); }
     .notif .tx small{ display:block;color:var(--muted);font-size:11px; }
 
@@ -225,8 +223,6 @@
             <svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
           </div>
         </div>
-
-        <p class="wordmark"><span class="inf">∞</span> Infinity Run &amp; Fit</p>
 
         <h1 class="title">As Melhores Ofertas Fit para o Seu Treino e o Seu Bolso</h1>
 
