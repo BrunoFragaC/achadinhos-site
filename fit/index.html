@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1581422773635151');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1581422773635151&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff7a59" />
+  <meta name="description" content="Achadinhos da Jô Fit — ofertas de tênis de corrida, roupa de academia, suplemento e acessórios de treino das principais lojas direto no grupo do WhatsApp. Entre grátis!" />
+  <meta property="og:title" content="Achadinhos da Jô Fit — Ofertas de Corrida e Academia no WhatsApp" />
+  <meta property="og:description" content="Tênis, legging, suplemento e smartwatch com desconto de verdade, direto no seu WhatsApp. Entre no grupo grátis!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://achadinhosdajo10.com.br/fit/hero.jpg" />
+  <title>Achadinhos da Jô Fit — Ofertas de Corrida e Academia no WhatsApp</title>
+  <link rel="icon" type="image/png" href="../logo.png" />
+  <link rel="apple-touch-icon" href="../logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *{ box-sizing:border-box; margin:0; padding:0; }
+
+    :root{
+      --coral:#ff5f6d;
+      --coral-soft:#ffe1dc;
+      --tangerine:#ff9a44;
+      --ink:#22303f;
+      --muted:#6f8298;
+      --volt:#eaff8f;
+      --volt-ink:#5d7300;
+      --volt-line:#cbe86b;
+      --sky:#cfeeff;
+      --whatsapp:#25d366;
+      --whatsapp-dark:#1ebe5b;
+      --line:rgba(255,255,255,.85);
+    }
+
+    body{
+      font-family:'Poppins',system-ui,-apple-system,sans-serif;
+      color:var(--ink);
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .stage{
+      min-height:100vh;
+      display:flex;align-items:flex-start;justify-content:center;
+      padding:30px 16px 60px;
+      background:
+        radial-gradient(55% 50% at 10% 6%,  #ffe3c9 0%, transparent 60%),
+        radial-gradient(55% 55% at 92% 10%, #cfeeff 0%, transparent 60%),
+        radial-gradient(60% 60% at 94% 94%, #d8f5e3 0%, transparent 60%),
+        radial-gradient(66% 60% at 6% 96%,  #ffd9d3 0%, transparent 60%),
+        radial-gradient(90% 80% at 50% 50%, #eaf4fb 0%, transparent 72%),
+        linear-gradient(135deg,#ffeede,#e4f1fb 45%,#ffe2dc 70%,#dbf3e6);
+    }
+
+    .card{
+      width:100%;max-width:412px;
+      background:rgba(255,255,255,.82);
+      -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+      border:1px solid var(--line);
+      border-radius:30px;overflow:hidden;
+      box-shadow:0 26px 64px -24px rgba(60,110,150,.55), 0 2px 10px rgba(34,48,63,.06);
+    }
+
+    /* banner */
+    .banner{
+      background:linear-gradient(100deg,var(--coral),var(--tangerine));
+      color:#fff;text-align:center;
+      font-size:12.5px;font-weight:700;letter-spacing:.09em;
+      padding:11px 14px;text-transform:uppercase;
+    }
+
+    .head{ padding:22px 24px 28px; text-align:center; }
+
+    /* hero (arte arredondada) */
+    .hero-wrap{ position:relative;width:100%;margin:2px auto 18px;line-height:0; }
+    .hero{
+      display:block;width:100%;height:auto;
+      border-radius:24px;border:4px solid #fff;
+      box-shadow:0 0 0 3px var(--coral-soft), 0 16px 32px -12px rgba(60,110,150,.7);
+    }
+    /* enquanto o hero.jpg não estiver na pasta, mostra este bloco no lugar (nada de imagem quebrada) */
+    .hero-fallback{
+      display:none;width:100%;aspect-ratio:1/1;
+      border-radius:24px;border:4px solid #fff;
+      box-shadow:0 0 0 3px var(--coral-soft), 0 16px 32px -12px rgba(60,110,150,.7);
+      background:linear-gradient(140deg,#ff8a5b,#ff5f6d 55%,#ff9a44);
+      flex-direction:column;align-items:center;justify-content:center;gap:6px;
+      color:#fff;line-height:1.2;
+    }
+    .hero-fallback .emo{ font-size:64px;line-height:1; }
+    .hero-fallback .t1{ font-size:20px;font-weight:800;letter-spacing:.02em; }
+    .hero-fallback .t2{ font-size:12.5px;font-weight:500;opacity:.9;letter-spacing:.14em;text-transform:uppercase; }
+    .hero-wrap.sem-foto .hero{ display:none; }
+    .hero-wrap.sem-foto .hero-fallback{ display:flex; }
+
+    .check{
+      position:absolute;right:10px;bottom:10px;
+      width:34px;height:34px;border-radius:50%;
+      background:#1da1f2;border:3px solid #fff;
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 3px 8px rgba(0,0,0,.25);
+    }
+    .check svg{ width:16px;height:16px;fill:#fff; }
+
+    /* título + badge */
+    .title{
+      font-size:26px;line-height:1.16;font-weight:800;
+      letter-spacing:-.015em;text-wrap:balance;color:var(--ink);
+      margin:0 0 16px;
+    }
+    .badge{
+      display:inline-block;background:var(--volt);color:var(--volt-ink);
+      font-weight:600;font-size:14px;padding:9px 16px;border-radius:999px;
+      border:1px solid var(--volt-line);margin-bottom:22px;
+    }
+
+    /* benefícios */
+    .benefits{ list-style:none;margin:22px 0 4px;padding:0;text-align:left;display:flex;flex-direction:column;gap:12px; }
+    .benefits li{ display:flex;align-items:center;gap:12px;font-size:15px;font-weight:500;color:#2f4256; }
+    .tick{ flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--sky);display:flex;align-items:center;justify-content:center; }
+    .tick svg{ width:13px;height:13px;fill:none;stroke:#1683b5;stroke-width:3;stroke-linecap:round;stroke-linejoin:round; }
+
+    /* CTA WhatsApp */
+    .cta{
+      display:flex;align-items:center;justify-content:center;gap:10px;
+      width:100%;
+      background:linear-gradient(180deg,var(--whatsapp),var(--whatsapp-dark));
+      color:#fff;border:none;cursor:pointer;
+      font-family:inherit;font-size:16px;font-weight:700;letter-spacing:.02em;
+      text-transform:uppercase;text-decoration:none;text-align:center;
+      padding:16px 18px;border-radius:16px;
+      box-shadow:0 12px 26px -8px rgba(30,190,91,.6);
+      animation:pulse 1.8s ease-in-out infinite;
+    }
+    .cta svg{ width:22px;height:22px;flex:0 0 auto;fill:currentColor; }
+    .cta:hover{ filter:brightness(1.03); }
+    .cta:focus-visible{ outline:3px solid var(--whatsapp-dark);outline-offset:3px; }
+    @keyframes pulse{
+      0%,100%{ transform:scale(1);   box-shadow:0 12px 26px -8px rgba(30,190,91,.5); }
+      50%    { transform:scale(1.035);box-shadow:0 18px 36px -6px rgba(37,211,102,.75); }
+    }
+
+    .proof{ font-size:13.5px;color:var(--muted);margin:16px 6px 0;line-height:1.5; }
+    .proof b{ color:var(--ink); }
+    .trust{ font-size:12px;color:var(--muted);margin-top:10px; }
+
+    /* notificações */
+    .notif-stack{ position:fixed;top:14px;right:14px;z-index:50;display:flex;flex-direction:column;gap:9px;width:min(232px,72vw);pointer-events:none; }
+    .notif{
+      display:flex;align-items:center;gap:10px;
+      background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+      border:1px solid rgba(255,255,255,.9);border-left:4px solid var(--coral);
+      border-radius:12px;padding:9px 12px;
+      box-shadow:0 10px 26px -12px rgba(34,48,63,.45);
+      opacity:0;transform:translateX(120%);
+      transition:opacity .45s ease,transform .45s cubic-bezier(.2,.8,.2,1);
+    }
+    .notif.show{ opacity:1;transform:translateX(0); }
+    .notif .av{ flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:var(--coral-soft);color:#d1465a;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px; }
+    .notif .tx{ font-size:12.5px;line-height:1.35;color:var(--ink); }
+    .notif .tx small{ display:block;color:var(--muted);font-size:11px; }
+
+    @media (prefers-reduced-motion:reduce){
+      .cta{ animation:none; }
+      .notif{ transition:opacity .3s ease;transform:none; }
+      .notif.show{ transform:none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="stage">
+    <main class="card">
+      <div class="banner">Participe do grupo de forma gratuita</div>
+
+      <div class="head">
+        <div class="hero-wrap" id="heroWrap">
+          <img class="hero" src="hero.jpg" width="440" height="440" id="heroImg"
+               alt="Achadinhos da Jô Fit — ofertas de corrida e academia" />
+          <div class="hero-fallback">
+            <span class="emo">👟</span>
+            <span class="t1">Achadinhos da Jô</span>
+            <span class="t2">Fit &amp; Corrida</span>
+          </div>
+          <div class="check" title="Verificado">
+            <svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+          </div>
+        </div>
+
+        <h1 class="title">Ofertas Fit que Cabem no Seu Treino e no Seu Bolso</h1>
+
+        <div class="badge">Tênis, legging e suplemento com desconto! 👟</div>
+
+        <a class="cta" href="#" target="_blank" rel="noopener noreferrer"
+           aria-label="Entrar no grupo Fit do WhatsApp">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.003 3C9.374 3 4 8.373 4 14.999c0 2.394.703 4.625 1.913 6.5L4 29l7.69-1.882a11.94 11.94 0 0 0 4.313.797h.005C22.626 27.915 28 22.541 28 15.915 28 12.7 26.747 9.68 24.477 7.41 22.207 5.14 19.187 3 16.003 3zm0 21.797h-.004a9.95 9.95 0 0 1-5.07-1.388l-.363-.215-4.566 1.117 1.135-4.451-.236-.376a9.927 9.927 0 0 1-1.524-5.286c0-5.486 4.464-9.95 9.953-9.95 2.658 0 5.156 1.038 7.034 2.92a9.873 9.873 0 0 1 2.913 7.034c0 5.486-4.464 9.95-9.948 9.95zm5.46-7.448c-.299-.15-1.77-.873-2.045-.973-.274-.1-.474-.15-.673.15-.2.3-.773.973-.948 1.173-.175.2-.349.225-.648.075-.299-.15-1.265-.466-2.408-1.486-.89-.794-1.49-1.774-1.665-2.074-.175-.299-.019-.461.131-.611.135-.135.299-.349.449-.524.15-.175.2-.3.299-.499.1-.2.05-.374-.025-.524-.075-.15-.673-1.624-.923-2.225-.243-.583-.49-.504-.673-.513l-.574-.01c-.2 0-.524.075-.799.374-.274.3-1.047 1.023-1.047 2.494 0 1.47 1.072 2.892 1.222 3.092.15.2 2.109 3.222 5.111 4.516.715.309 1.272.493 1.706.631.717.228 1.369.196 1.884.119.575-.086 1.77-.722 2.02-1.421.249-.7.249-1.299.174-1.423-.075-.124-.274-.2-.573-.349z"/></svg>
+          Quero entrar no grupo Fit
+        </a>
+
+        <!-- Quando o grupo tiver número real de membros, dá pra trocar por
+             "Mais de X mil corredores já economizam todos os dias no grupo" -->
+        <p class="proof">Ofertas novas <b>todos os dias</b> — direto no seu WhatsApp</p>
+
+        <ul class="benefits">
+          <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>Cupons secretos de tênis, legging e top</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>Suplemento, smartwatch e acessório de treino</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>Pode sair quando quiser</li>
+        </ul>
+
+        <p class="trust">🔒 Grupo oficial • 100% gratuito • sem spam</p>
+      </div>
+    </main>
+  </div>
+
+  <div class="notif-stack" id="notifStack" aria-hidden="true"></div>
+
+  <!-- ===================================================================== -->
+  <!--  👇 LINK DO GRUPO FIT: troque a variável abaixo pelo convite do WhatsApp -->
+  <!-- ===================================================================== -->
+  <script>
+    var LINK_GRUPO_FIT = "COLE_AQUI_O_LINK_DO_GRUPO_FIT";
+
+    (function () {
+      var botoes = document.querySelectorAll('.cta');
+      var configurado = LINK_GRUPO_FIT.indexOf('chat.whatsapp.com') !== -1;
+      botoes.forEach(function (a) {
+        if (configurado) a.setAttribute('href', LINK_GRUPO_FIT);
+        a.addEventListener('click', function (e) {
+          if (!configurado) {
+            e.preventDefault();
+            alert('⚠️ O link do grupo Fit ainda não foi configurado. Edite a variável LINK_GRUPO_FIT no final do index.html.');
+            return;
+          }
+          trackLead();
+        });
+      });
+    })();
+
+    // hero.jpg ainda não subiu? tenta .jpeg e, se também não existir, mostra o bloco
+    // colorido no lugar (a página nunca fica com imagem quebrada).
+    (function () {
+      var img = document.getElementById('heroImg');
+      if (!img) return;
+      img.addEventListener('error', function () {
+        if (img.getAttribute('src') === 'hero.jpg') { img.setAttribute('src', 'hero.jpeg'); return; }
+        document.getElementById('heroWrap').classList.add('sem-foto');
+      });
+    })();
+
+    // Evento Lead com event_id (desduplicação com a API de Conversões) e
+    // content_name pra separar este grupo dos demais no Gerenciador de Anúncios.
+    function trackLead() {
+      var eventId = (window.crypto && crypto.randomUUID)
+        ? crypto.randomUUID()
+        : 'lead-' + Date.now() + '-' + Math.random().toString(36).slice(2);
+      if (window.fbq) {
+        fbq('track', 'Lead', { content_name: 'grupo-fit', content_category: 'fitness-corrida' }, { eventID: eventId });
+      }
+      return true;
+    }
+
+    // ---- Notificações "entrou no grupo" ----
+    var nomes = ["Rafael","Camila","Thiago","Juliana","Lucas","Aline","Diego","Patrícia",
+      "Felipe","Renata","Gustavo","Vanessa","Rodrigo","Larissa","André","Bianca",
+      "Eduardo","Carolina","Matheus","Fernanda","Bruno","Priscila","Marcelo","Tatiane"];
+    var stack = document.getElementById('notifStack');
+
+    function spawnNotif(){
+      var nome = nomes[Math.floor(Math.random()*nomes.length)];
+      var el = document.createElement('div');
+      el.className = 'notif';
+      el.innerHTML =
+        '<div class="av">'+nome.charAt(0)+'</div>'+
+        '<div class="tx"><b>'+nome+'</b> entrou no grupo 🎉<small>agora mesmo</small></div>';
+      stack.appendChild(el);
+      requestAnimationFrame(function(){ el.classList.add('show'); });
+      setTimeout(function(){ el.classList.remove('show'); setTimeout(function(){ el.remove(); }, 500); }, 3800);
+      while (stack.children.length > 3) stack.removeChild(stack.firstChild);
+      setTimeout(spawnNotif, 4000 + Math.random()*3000);
+    }
+    setTimeout(spawnNotif, 1400);
+  </script>
+
+</body>
+</html>
