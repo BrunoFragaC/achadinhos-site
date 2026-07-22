@@ -135,9 +135,12 @@
       letter-spacing:-.015em;text-wrap:balance;color:var(--ink);
       margin:0 0 16px;
     }
+    /* raio menor que o da /baby de propósito: a frase daqui ocupa 2-3 linhas e um
+       border-radius:999px viraria um losango. 18px mantém a cara de etiqueta. */
     .badge{
       display:inline-block;background:var(--volt);color:var(--volt-ink);
-      font-weight:600;font-size:14px;padding:9px 16px;border-radius:999px;
+      font-weight:600;font-size:14px;line-height:1.45;text-wrap:balance;
+      padding:11px 18px;border-radius:18px;
       border:1px solid var(--volt-line);margin-bottom:22px;
     }
 
@@ -218,7 +221,7 @@
 
         <h1 class="title">Ofertas Fit que Cabem no Seu Treino e no Seu Bolso</h1>
 
-        <div class="badge">Tênis, legging e suplemento com desconto! 👟</div>
+        <div class="badge">Corra para economizar: ofertas em tênis, moda fitness, suplementos e muito mais! 👟🔥</div>
 
         <a class="cta" href="#" target="_blank" rel="noopener noreferrer"
            aria-label="Entrar no grupo INFINITY RUN &amp; FIT no WhatsApp">
