@@ -22,516 +22,266 @@
   <!-- Verificação de domínio do Meta Business (não remover) -->
   <meta name="facebook-domain-verification" content="a1lg9ulmdx85ht8l3v5889gdzj6qxu" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#ff7eb6" />
+  <meta name="theme-color" content="#e56a9e" />
   <meta name="description" content="Achadinhos da Jô — promoções, ofertas e cupons de desconto das principais plataformas (Shopee, Amazon, Mercado Livre, Magalu e mais) direto no nosso grupo do WhatsApp. Entre grátis!" />
   <meta property="og:title" content="Achadinhos da Jô" />
   <meta property="og:description" content="Promoções e cupons de desconto das principais lojas direto no seu WhatsApp. Entre no grupo grátis!" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://achadinhosdajo10.com.br/jo-hero.jpg" />
   <title>Achadinhos da Jô — Promoções e Ofertas no WhatsApp</title>
   <link rel="icon" type="image/png" href="logo.png" />
   <link rel="apple-touch-icon" href="logo.png" />
-  <meta property="og:image" content="https://achadinhosdajo10.com.br/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    *{ box-sizing:border-box; margin:0; padding:0; }
 
-    :root {
-      --pink-1: #ffb3d1;
-      --pink-2: #ff7eb6;
-      --pink-3: #d94f8c;
-      --lavender: #c8a8e9;
-      --lavender-deep: #8b6bb8;
-      --mint: #b5e8d5;
-      --yellow: #ffe5a3;
-      --pink-light: #fff0f7;
-      --whatsapp: #25d366;
-      --whatsapp-dark: #1ebe5b;
-      --text: #4a2d3f;
-      --muted: #8a6b7d;
-      --bg: #fff8fb;
-      --white: #ffffff;
-      --shadow: 0 10px 30px rgba(217, 79, 140, 0.18);
+    :root{
+      --rose:#e56a9e;
+      --rose-soft:#ffe0ee;
+      --lilac:#a97bd8;
+      --plum:#4a2d3f;
+      --muted:#8a6b7d;
+      --peach:#ffe0bd;
+      --peach-ink:#9a6a34;
+      --peach-line:#f3c79a;
+      --mint:#c9efdd;
+      --whatsapp:#25d366;
+      --whatsapp-dark:#1ebe5b;
+      --line:rgba(255,255,255,.85);
     }
 
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Poppins', system-ui, -apple-system, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      overflow-x: hidden;
+    body{
+      font-family:'Poppins',system-ui,-apple-system,sans-serif;
+      color:var(--plum);
+      -webkit-font-smoothing:antialiased;
     }
 
-    .container {
-      width: 100%;
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* HERO */
-    .hero {
-      position: relative;
+    .stage{
+      min-height:100vh;
+      display:flex;align-items:flex-start;justify-content:center;
+      padding:30px 16px 60px;
       background:
-        radial-gradient(circle at 20% 20%, var(--yellow) 0%, transparent 45%),
-        radial-gradient(circle at 80% 30%, var(--mint) 0%, transparent 50%),
-        radial-gradient(circle at 70% 90%, var(--lavender) 0%, transparent 50%),
-        linear-gradient(135deg, var(--pink-1) 0%, var(--pink-2) 100%);
-      color: var(--white);
-      padding: 56px 0 80px;
-      overflow: hidden;
+        radial-gradient(55% 50% at 10% 6%,  #ffe9c2 0%, transparent 60%),
+        radial-gradient(55% 55% at 92% 10%, #e6d8f6 0%, transparent 60%),
+        radial-gradient(60% 60% at 94% 94%, #c9efdd 0%, transparent 60%),
+        radial-gradient(66% 60% at 6% 96%,  #ffd6e8 0%, transparent 60%),
+        radial-gradient(90% 80% at 50% 50%, #efdcf5 0%, transparent 72%),
+        linear-gradient(135deg,#f7e7cf,#ebddf4 45%,#f7d3e4 70%,#d9efe0);
     }
 
-    .hero::before,
-    .hero::after {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.08);
-      z-index: 0;
-    }
-    .hero::before { width: 320px; height: 320px; top: -80px; right: -80px; }
-    .hero::after  { width: 220px; height: 220px; bottom: -60px; left: -60px; }
-
-    .hero .container { position: relative; z-index: 1; text-align: center; }
-
-    .logo-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: rgba(255, 255, 255, 0.18);
-      backdrop-filter: blur(8px);
-      padding: 10px 20px;
-      border-radius: 999px;
-      font-weight: 600;
-      font-size: 14px;
-      letter-spacing: 0.5px;
-      margin-bottom: 28px;
-      border: 1px solid rgba(255, 255, 255, 0.25);
+    .card{
+      width:100%;max-width:412px;
+      background:rgba(255,255,255,.82);
+      -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+      border:1px solid var(--line);
+      border-radius:30px;overflow:hidden;
+      box-shadow:0 26px 64px -24px rgba(139,107,184,.55), 0 2px 10px rgba(74,45,63,.06);
     }
 
-    .logo-badge .dot {
-      width: 8px;
-      height: 8px;
-      background: var(--whatsapp);
-      border-radius: 50%;
-      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-      animation: pulse 2s infinite;
+    /* banner */
+    .banner{
+      background:linear-gradient(100deg,var(--rose),var(--lilac));
+      color:#fff;text-align:center;
+      font-size:12.5px;font-weight:700;letter-spacing:.09em;
+      padding:11px 14px;text-transform:uppercase;
     }
 
-    @keyframes pulse {
-      0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-      70%  { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    .head{ padding:22px 24px 28px; text-align:center; }
+
+    /* hero (arte redonda) */
+    .hero-wrap{
+      position:relative;line-height:0;
+      width:clamp(160px,55%,210px);
+      margin:2px auto 18px;
+    }
+    .hero{
+      display:block;width:100%;aspect-ratio:1/1;object-fit:cover;
+      border-radius:50%;border:4px solid #fff;
+      box-shadow:0 0 0 3px var(--rose-soft), 0 16px 32px -12px rgba(139,107,184,.7);
+    }
+    .check{
+      position:absolute;right:6.5%;bottom:6.5%;
+      width:32px;height:32px;border-radius:50%;
+      background:#1da1f2;border:3px solid #fff;
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 3px 8px rgba(0,0,0,.25);
+    }
+    .check svg{ width:15px;height:15px;fill:#fff; }
+
+    /* título + badge */
+    .title{
+      font-size:26px;line-height:1.16;font-weight:800;
+      letter-spacing:-.015em;text-wrap:balance;color:var(--plum);
+      margin:0 0 16px;
+    }
+    .badge{
+      display:inline-block;background:var(--peach);color:var(--peach-ink);
+      font-weight:600;font-size:14px;padding:9px 16px;border-radius:999px;
+      border:1px solid var(--peach-line);margin-bottom:22px;
     }
 
-    h1 {
-      font-size: clamp(2rem, 6vw, 3.5rem);
-      font-weight: 800;
-      line-height: 1.15;
-      margin-bottom: 16px;
-      letter-spacing: -0.5px;
-      text-shadow:
-        -1px -1px 0 #000, 1px -1px 0 #000,
-        -1px  1px 0 #000, 1px  1px 0 #000,
-         0   -1px 0 #000,  0    1px 0 #000,
-        -1px  0   0 #000,  1px  0   0 #000;
+    /* benefícios */
+    .benefits{ list-style:none;margin:22px 0 4px;padding:0;text-align:left;display:flex;flex-direction:column;gap:12px; }
+    .benefits li{ display:flex;align-items:center;gap:12px;font-size:15px;font-weight:500;color:#42324f; }
+    .tick{ flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center; }
+    .tick svg{ width:13px;height:13px;fill:none;stroke:var(--whatsapp-dark);stroke-width:3;stroke-linecap:round;stroke-linejoin:round; }
+
+    /* plataformas */
+    .stores{ margin-top:24px;padding-top:20px;border-top:1px dashed rgba(139,107,184,.3); }
+    .stores h2{ font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:14px; }
+    .stores-grid{ display:flex;flex-wrap:wrap;justify-content:center;gap:8px; }
+    .store{
+      display:inline-flex;align-items:center;gap:7px;
+      background:rgba(255,255,255,.9);border:1px solid rgba(139,107,184,.18);
+      border-radius:999px;padding:7px 13px 7px 8px;
+      font-size:12.5px;font-weight:600;color:var(--plum);
+      box-shadow:0 4px 12px -6px rgba(139,107,184,.5);
+    }
+    .store img{ width:20px;height:20px;object-fit:contain;border-radius:5px; }
+    .store .emoji{ font-size:16px;line-height:1;width:20px;text-align:center; }
+
+    /* CTA WhatsApp */
+    .cta{
+      display:flex;align-items:center;justify-content:center;gap:10px;
+      width:100%;
+      background:linear-gradient(180deg,var(--whatsapp),var(--whatsapp-dark));
+      color:#fff;border:none;cursor:pointer;
+      font-family:inherit;font-size:16px;font-weight:700;letter-spacing:.02em;
+      text-transform:uppercase;text-decoration:none;text-align:center;
+      padding:16px 18px;border-radius:16px;
+      box-shadow:0 12px 26px -8px rgba(30,190,91,.6);
+      animation:pulse 1.8s ease-in-out infinite;
+    }
+    .cta svg{ width:22px;height:22px;flex:0 0 auto;fill:currentColor; }
+    .cta:hover{ filter:brightness(1.03); }
+    .cta:focus-visible{ outline:3px solid var(--whatsapp-dark);outline-offset:3px; }
+    @keyframes pulse{
+      0%,100%{ transform:scale(1);   box-shadow:0 12px 26px -8px rgba(30,190,91,.5); }
+      50%    { transform:scale(1.035);box-shadow:0 18px 36px -6px rgba(37,211,102,.75); }
     }
 
-    h1 .highlight {
-      color: #fff;
-      -webkit-text-fill-color: #fff;
+    .proof{ font-size:13.5px;color:var(--muted);margin:16px 6px 0;line-height:1.5; }
+    .proof b{ color:var(--plum); }
+    .trust{ font-size:12px;color:var(--muted);margin-top:10px; }
+    .foot{ font-size:11px;color:var(--muted);text-align:center;margin-top:18px;opacity:.85; }
+    .foot a{ color:var(--muted); }
+
+    /* notificações */
+    .notif-stack{ position:fixed;top:14px;right:14px;z-index:50;display:flex;flex-direction:column;gap:9px;width:min(232px,72vw);pointer-events:none; }
+    .notif{
+      display:flex;align-items:center;gap:10px;
+      background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+      border:1px solid rgba(255,255,255,.9);border-left:4px solid var(--rose);
+      border-radius:12px;padding:9px 12px;
+      box-shadow:0 10px 26px -12px rgba(74,45,63,.45);
+      opacity:0;transform:translateX(120%);
+      transition:opacity .45s ease,transform .45s cubic-bezier(.2,.8,.2,1);
     }
+    .notif.show{ opacity:1;transform:translateX(0); }
+    .notif .av{ flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:var(--rose-soft);color:#c2568c;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px; }
+    .notif .tx{ font-size:12.5px;line-height:1.35;color:var(--plum); }
+    .notif .tx small{ display:block;color:var(--muted);font-size:11px; }
 
-    .logo-wrap {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 24px;
-      animation: floatIn 0.9s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    .logo-wrap img {
-      width: clamp(140px, 28vw, 200px);
-      height: auto;
-      border-radius: 50%;
-      box-shadow:
-        0 0 0 6px rgba(255, 255, 255, 0.4),
-        0 18px 40px rgba(217, 79, 140, 0.35);
-      animation: gentleFloat 4s ease-in-out infinite;
-    }
-
-    @keyframes floatIn {
-      0%   { opacity: 0; transform: translateY(-20px) scale(0.9); }
-      100% { opacity: 1; transform: translateY(0) scale(1); }
-    }
-
-    @keyframes gentleFloat {
-      0%, 100% { transform: translateY(0); }
-      50%      { transform: translateY(-8px); }
-    }
-
-    .hero-subtitle {
-      font-size: clamp(1rem, 2.2vw, 1.25rem);
-      font-weight: 400;
-      max-width: 620px;
-      margin: 0 auto 36px;
-      opacity: 0.95;
-    }
-
-    .cta-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      background: var(--whatsapp);
-      color: var(--white);
-      padding: 18px 36px;
-      border-radius: 999px;
-      font-family: inherit;
-      font-size: 1.125rem;
-      font-weight: 700;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-      animation: bounceIn 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    .cta-button:hover,
-    .cta-button:focus-visible {
-      background: var(--whatsapp-dark);
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 18px 36px rgba(37, 211, 102, 0.55);
-      outline: none;
-    }
-
-    .cta-button:active { transform: translateY(0) scale(0.98); }
-
-    .cta-button svg { width: 26px; height: 26px; }
-
-    @keyframes bounceIn {
-      0%   { opacity: 0; transform: scale(0.5); }
-      60%  { opacity: 1; transform: scale(1.08); }
-      100% { transform: scale(1); }
-    }
-
-    .cta-hint {
-      margin-top: 18px;
-      font-size: 0.875rem;
-      opacity: 0.85;
-    }
-
-    /* BENEFITS */
-    .benefits { padding: 72px 0; background: var(--white); }
-
-    .section-title {
-      text-align: center;
-      font-size: clamp(1.5rem, 3.5vw, 2.25rem);
-      font-weight: 700;
-      color: var(--pink-3);
-      margin-bottom: 12px;
-    }
-
-    .section-subtitle {
-      text-align: center;
-      color: var(--muted);
-      max-width: 600px;
-      margin: 0 auto 48px;
-    }
-
-    .benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-    }
-
-    .benefit-card {
-      background: var(--bg);
-      border-radius: 20px;
-      padding: 32px 24px;
-      text-align: center;
-      border: 1px solid rgba(217, 79, 140, 0.1);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .benefit-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow);
-    }
-
-    .benefit-icon {
-      width: 64px;
-      height: 64px;
-      margin: 0 auto 18px;
-      background: linear-gradient(135deg, var(--pink-2), var(--lavender));
-      color: var(--white);
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      box-shadow: 0 8px 18px rgba(217, 79, 140, 0.3);
-    }
-
-    .benefit-card h3 {
-      font-size: 1.125rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-      color: var(--text);
-    }
-
-    .benefit-card p { color: var(--muted); font-size: 0.95rem; }
-
-    /* PLATFORMS */
-    .platforms {
-      padding: 72px 0;
-      background: linear-gradient(180deg, var(--white) 0%, var(--pink-light) 100%);
-    }
-
-    .platforms-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 16px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .platform-pill {
-      background: var(--white);
-      border-radius: 16px;
-      padding: 20px 16px;
-      text-align: center;
-      font-weight: 600;
-      color: var(--text);
-      border: 2px solid transparent;
-      box-shadow: 0 4px 14px rgba(217, 79, 140, 0.08);
-      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .platform-pill:hover {
-      transform: translateY(-4px);
-      border-color: var(--pink-2);
-      box-shadow: 0 10px 24px rgba(217, 79, 140, 0.18);
-    }
-
-    .platform-pill .emoji {
-      font-size: 28px;
-      line-height: 1;
-    }
-
-    .platform-pill .logo {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-      border-radius: 8px;
-    }
-
-    .platform-pill .name {
-      font-size: 0.95rem;
-    }
-
-    .platforms-note {
-      text-align: center;
-      margin-top: 32px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    /* FINAL CTA */
-    .final-cta {
-      background: linear-gradient(135deg, var(--pink-light) 0%, #fff 100%);
-      padding: 72px 0;
-      text-align: center;
-    }
-
-    .final-cta h2 {
-      font-size: clamp(1.5rem, 3.5vw, 2.25rem);
-      color: var(--pink-3);
-      margin-bottom: 16px;
-      font-weight: 700;
-    }
-
-    .final-cta p {
-      color: var(--muted);
-      max-width: 520px;
-      margin: 0 auto 32px;
-    }
-
-    /* FOOTER */
-    footer {
-      background: linear-gradient(135deg, var(--pink-3) 0%, var(--lavender-deep) 100%);
-      color: rgba(255, 255, 255, 0.9);
-      padding: 32px 0;
-      text-align: center;
-      font-size: 0.875rem;
-    }
-
-    footer strong { color: var(--white); }
-
-    footer .footer-links {
-      margin-top: 8px;
-      opacity: 0.8;
-    }
-
-    /* Responsive tweaks */
-    @media (max-width: 600px) {
-      .hero { padding: 48px 0 64px; }
-      .benefits, .final-cta { padding: 56px 0; }
-      .cta-button { padding: 16px 28px; font-size: 1rem; width: 100%; max-width: 340px; }
+    @media (prefers-reduced-motion:reduce){
+      .cta{ animation:none; }
+      .notif{ transition:opacity .3s ease;transform:none; }
+      .notif.show{ transform:none; }
     }
   </style>
 </head>
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="container">
-      <div class="logo-wrap">
-        <img src="logo.png" alt="Logotipo Achadinhos da Jô" width="200" height="200" />
-      </div>
+  <div class="stage">
+    <main class="card">
+      <div class="banner">Participe do grupo de forma gratuita</div>
 
-      <div class="logo-badge">
-        <span class="dot"></span>
-        <span>Grupo ativo agora</span>
-      </div>
-
-      <h1>
-        Receba os melhores achadinhos e ofertas direto no seu <span class="highlight">WhatsApp</span>.
-      </h1>
-
-      <p class="hero-subtitle">
-        As melhores promoções acabam em minutos. Aproveite antes de todo mundo!
-      </p>
-
-      <a
-        href="https://chat.whatsapp.com/H36MRuR4wLaEqaOXgDFWUn?mode=ems_share_t"
-        class="cta-button"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Entrar no grupo do WhatsApp"
-        onclick="trackLead();"
-      >
-        <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
-          <path d="M16.003 3C9.374 3 4 8.373 4 14.999c0 2.394.703 4.625 1.913 6.5L4 29l7.69-1.882a11.94 11.94 0 0 0 4.313.797h.005C22.626 27.915 28 22.541 28 15.915 28 12.7 26.747 9.68 24.477 7.41 22.207 5.14 19.187 3 16.003 3zm0 21.797h-.004a9.95 9.95 0 0 1-5.07-1.388l-.363-.215-4.566 1.117 1.135-4.451-.236-.376a9.927 9.927 0 0 1-1.524-5.286c0-5.486 4.464-9.95 9.953-9.95 2.658 0 5.156 1.038 7.034 2.92a9.873 9.873 0 0 1 2.913 7.034c0 5.486-4.464 9.95-9.948 9.95zm5.46-7.448c-.299-.15-1.77-.873-2.045-.973-.274-.1-.474-.15-.673.15-.2.3-.773.973-.948 1.173-.175.2-.349.225-.648.075-.299-.15-1.265-.466-2.408-1.486-.89-.794-1.49-1.774-1.665-2.074-.175-.299-.019-.461.131-.611.135-.135.299-.349.449-.524.15-.175.2-.3.299-.499.1-.2.05-.374-.025-.524-.075-.15-.673-1.624-.923-2.225-.243-.583-.49-.504-.673-.513l-.574-.01c-.2 0-.524.075-.799.374-.274.3-1.047 1.023-1.047 2.494 0 1.47 1.072 2.892 1.222 3.092.15.2 2.109 3.222 5.111 4.516.715.309 1.272.493 1.706.631.717.228 1.369.196 1.884.119.575-.086 1.77-.722 2.02-1.421.249-.7.249-1.299.174-1.423-.075-.124-.274-.2-.573-.349z"/>
-        </svg>
-        QUERO ENTRAR NO GRUPO GRÁTIS
-      </a>
-
-      <p class="cta-hint">💥 JÁ SOMOS +20 MIL MEMBROS 💥</p>
-    </div>
-  </header>
-
-  <!-- PLATFORMS -->
-  <section class="platforms">
-    <div class="container">
-      <h2 class="section-title">Achadinhos das maiores plataformas do Brasil</h2>
-      <p class="section-subtitle">
-        Acompanhe achadinhos, cupons e promoções da Shopee, Amazon, Mercado Livre, Magalu, AliExpress e outras grandes lojas.
-      </p>
-
-      <div class="platforms-grid">
-        <div class="platform-pill"><img class="logo" src="https://www.google.com/s2/favicons?domain=shopee.com.br&sz=128" alt="Shopee" loading="lazy" /><span class="name">Shopee</span></div>
-        <div class="platform-pill"><img class="logo" src="https://www.google.com/s2/favicons?domain=amazon.com.br&sz=128" alt="Amazon" loading="lazy" /><span class="name">Amazon</span></div>
-        <div class="platform-pill"><img class="logo" src="https://www.google.com/s2/favicons?domain=mercadolivre.com.br&sz=128" alt="Mercado Livre" loading="lazy" /><span class="name">Mercado Livre</span></div>
-        <div class="platform-pill"><span class="emoji">💙</span><span class="name">Magalu</span></div>
-        <div class="platform-pill"><img class="logo" src="https://www.google.com/s2/favicons?domain=aliexpress.com&sz=128" alt="AliExpress" loading="lazy" /><span class="name">AliExpress</span></div>
-      </div>
-
-      <p class="platforms-note">
-        Acompanhamos as principais plataformas para garantir os melhores preços pra você!
-      </p>
-    </div>
-  </section>
-
-  <!-- BENEFITS -->
-  <section class="benefits">
-    <div class="container">
-      <h2 class="section-title">Por que entrar no grupo?</h2>
-      <p class="section-subtitle">
-        Selecionamos os melhores achadinhos da internet pra você economizar todos os dias.
-      </p>
-
-      <div class="benefits-grid">
-        <div class="benefit-card">
-          <div class="benefit-icon">🔥</div>
-          <h3>Ofertas Quentinhas</h3>
-          <p>Promoções selecionadas a dedo, com descontos de verdade.</p>
+      <div class="head">
+        <div class="hero-wrap">
+          <img class="hero" src="jo-hero.jpg" width="440" height="440"
+               alt="Achadinhos da Jô — promoções e cupons das maiores lojas" />
+          <div class="check" title="Verificado">
+            <svg viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+          </div>
         </div>
 
-        <div class="benefit-card">
-          <div class="benefit-icon">⚡</div>
-          <h3>Em Primeira Mão</h3>
-          <p>Você fica sabendo antes que o achadinho acabe ou suba de preço.</p>
-        </div>
+        <h1 class="title">Os Melhores Achadinhos Direto no seu WhatsApp</h1>
 
-        <div class="benefit-card">
-          <div class="benefit-icon">💸</div>
-          <h3>100% Gratuito</h3>
-          <p>Sem mensalidade, sem cobrança. É só entrar e aproveitar.</p>
-        </div>
+        <div class="badge">Promoções e cupons de verdade, todo dia! 🔥</div>
 
-        <div class="benefit-card">
-          <div class="benefit-icon">🎟️</div>
-          <h3>Cupons Exclusivos</h3>
-          <p>Cupons de desconto das principais lojas e marketplaces.</p>
-        </div>
+        <a class="cta" href="https://chat.whatsapp.com/H36MRuR4wLaEqaOXgDFWUn?mode=ems_share_t"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Entrar no grupo do WhatsApp">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.003 3C9.374 3 4 8.373 4 14.999c0 2.394.703 4.625 1.913 6.5L4 29l7.69-1.882a11.94 11.94 0 0 0 4.313.797h.005C22.626 27.915 28 22.541 28 15.915 28 12.7 26.747 9.68 24.477 7.41 22.207 5.14 19.187 3 16.003 3zm0 21.797h-.004a9.95 9.95 0 0 1-5.07-1.388l-.363-.215-4.566 1.117 1.135-4.451-.236-.376a9.927 9.927 0 0 1-1.524-5.286c0-5.486 4.464-9.95 9.953-9.95 2.658 0 5.156 1.038 7.034 2.92a9.873 9.873 0 0 1 2.913 7.034c0 5.486-4.464 9.95-9.948 9.95zm5.46-7.448c-.299-.15-1.77-.873-2.045-.973-.274-.1-.474-.15-.673.15-.2.3-.773.973-.948 1.173-.175.2-.349.225-.648.075-.299-.15-1.265-.466-2.408-1.486-.89-.794-1.49-1.774-1.665-2.074-.175-.299-.019-.461.131-.611.135-.135.299-.349.449-.524.15-.175.2-.3.299-.499.1-.2.05-.374-.025-.524-.075-.15-.673-1.624-.923-2.225-.243-.583-.49-.504-.673-.513l-.574-.01c-.2 0-.524.075-.799.374-.274.3-1.047 1.023-1.047 2.494 0 1.47 1.072 2.892 1.222 3.092.15.2 2.109 3.222 5.111 4.516.715.309 1.272.493 1.706.631.717.228 1.369.196 1.884.119.575-.086 1.77-.722 2.02-1.421.249-.7.249-1.299.174-1.423-.075-.124-.274-.2-.573-.349z"/></svg>
+          Quero entrar no grupo grátis
+        </a>
+
+        <p class="proof">Mais de <b>20 mil pessoas</b> já economizam todos os dias no grupo</p>
+
+        <ul class="benefits">
+          <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>Ofertas quentinhas selecionadas a dedo</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>Cupons exclusivos das maiores lojas</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>Você recebe antes que o achadinho acabe</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></svg></span>Pode sair quando quiser</li>
+        </ul>
+
+        <section class="stores">
+          <h2>Achadinhos das maiores lojas do Brasil</h2>
+          <div class="stores-grid">
+            <span class="store"><img src="https://www.google.com/s2/favicons?domain=shopee.com.br&sz=128" alt="" loading="lazy" />Shopee</span>
+            <span class="store"><img src="https://www.google.com/s2/favicons?domain=amazon.com.br&sz=128" alt="" loading="lazy" />Amazon</span>
+            <span class="store"><img src="https://www.google.com/s2/favicons?domain=mercadolivre.com.br&sz=128" alt="" loading="lazy" />Mercado Livre</span>
+            <span class="store"><span class="emoji">💙</span>Magalu</span>
+            <span class="store"><img src="https://www.google.com/s2/favicons?domain=aliexpress.com&sz=128" alt="" loading="lazy" />AliExpress</span>
+          </div>
+        </section>
+
+        <p class="trust">🔒 Grupo oficial • 100% gratuito • sem spam</p>
+
+        <p class="foot"><b>Achadinhos da Jô</b> © 2026 — feito com 💖 pra você economizar</p>
       </div>
-    </div>
-  </section>
+    </main>
+  </div>
 
-  <!-- FINAL CTA -->
-  <section class="final-cta">
-    <div class="container">
-      <h2>Pronta pra economizar?</h2>
-      <p>Clique no botão abaixo e entre agora no grupo. É rapidinho!</p>
+  <div class="notif-stack" id="notifStack" aria-hidden="true"></div>
 
-      <a
-        href="https://chat.whatsapp.com/H36MRuR4wLaEqaOXgDFWUn?mode=ems_share_t"
-        class="cta-button"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Entrar no grupo do WhatsApp"
-        onclick="trackLead();"
-      >
-        <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
-          <path d="M16.003 3C9.374 3 4 8.373 4 14.999c0 2.394.703 4.625 1.913 6.5L4 29l7.69-1.882a11.94 11.94 0 0 0 4.313.797h.005C22.626 27.915 28 22.541 28 15.915 28 12.7 26.747 9.68 24.477 7.41 22.207 5.14 19.187 3 16.003 3zm0 21.797h-.004a9.95 9.95 0 0 1-5.07-1.388l-.363-.215-4.566 1.117 1.135-4.451-.236-.376a9.927 9.927 0 0 1-1.524-5.286c0-5.486 4.464-9.95 9.953-9.95 2.658 0 5.156 1.038 7.034 2.92a9.873 9.873 0 0 1 2.913 7.034c0 5.486-4.464 9.95-9.948 9.95zm5.46-7.448c-.299-.15-1.77-.873-2.045-.973-.274-.1-.474-.15-.673.15-.2.3-.773.973-.948 1.173-.175.2-.349.225-.648.075-.299-.15-1.265-.466-2.408-1.486-.89-.794-1.49-1.774-1.665-2.074-.175-.299-.019-.461.131-.611.135-.135.299-.349.449-.524.15-.175.2-.3.299-.499.1-.2.05-.374-.025-.524-.075-.15-.673-1.624-.923-2.225-.243-.583-.49-.504-.673-.513l-.574-.01c-.2 0-.524.075-.799.374-.274.3-1.047 1.023-1.047 2.494 0 1.47 1.072 2.892 1.222 3.092.15.2 2.109 3.222 5.111 4.516.715.309 1.272.493 1.706.631.717.228 1.369.196 1.884.119.575-.086 1.77-.722 2.02-1.421.249-.7.249-1.299.174-1.423-.075-.124-.274-.2-.573-.349z"/>
-        </svg>
-        Quero entrar no grupo
-      </a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p><strong>Achadinhos da Jô</strong> © 2026 — Todos os direitos reservados</p>
-      <p class="footer-links">Promoções com curadoria, feito com 💖 para você economizar</p>
-    </div>
-  </footer>
-
-  <!-- Disparo do evento Lead com event_id (para desduplicação com a API de Conversões) -->
   <script>
+    // Dispara o Lead com event_id (desduplicação com a API de Conversões)
     function trackLead() {
-      // Gera um event_id único para este clique.
       var eventId = (window.crypto && crypto.randomUUID)
         ? crypto.randomUUID()
         : 'lead-' + Date.now() + '-' + Math.random().toString(36).slice(2);
-
-      // Envia o Lead pelo navegador já com o eventID.
-      // A API de Conversões precisa enviar ESTE MESMO event_id para a Meta desduplicar.
       if (window.fbq) {
-        fbq('track', 'Lead', {}, { eventID: eventId });
+        fbq('track', 'Lead', { content_name: 'grupo-principal', content_category: 'geral' }, { eventID: eventId });
       }
       return true;
     }
+
+    document.querySelectorAll('.cta').forEach(function (a) {
+      a.addEventListener('click', trackLead);
+    });
+
+    // ---- Notificações "entrou no grupo" ----
+    var nomes = ["Fernanda","Juliana","Camila","Patrícia","Aline","Bruna","Larissa",
+      "Vanessa","Tatiane","Priscila","Carla","Renata","Débora","Jéssica","Mariana",
+      "Amanda","Bianca","Letícia","Gabriela","Sabrina","Daniela","Rafaela","Michele"];
+    var stack = document.getElementById('notifStack');
+
+    function spawnNotif(){
+      var nome = nomes[Math.floor(Math.random()*nomes.length)];
+      var el = document.createElement('div');
+      el.className = 'notif';
+      el.innerHTML =
+        '<div class="av">'+nome.charAt(0)+'</div>'+
+        '<div class="tx"><b>'+nome+'</b> entrou no grupo 🎉<small>agora mesmo</small></div>';
+      stack.appendChild(el);
+      requestAnimationFrame(function(){ el.classList.add('show'); });
+      setTimeout(function(){ el.classList.remove('show'); setTimeout(function(){ el.remove(); }, 500); }, 3800);
+      while (stack.children.length > 3) stack.removeChild(stack.firstChild);
+      setTimeout(spawnNotif, 4000 + Math.random()*3000);
+    }
+    setTimeout(spawnNotif, 1400);
   </script>
 
 </body>
