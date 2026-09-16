@@ -173,16 +173,18 @@
     .cta-baby{
       display:flex;align-items:center;justify-content:center;gap:10px;
       width:100%;
-      background:linear-gradient(180deg,var(--rose),#cf5288);
-      color:#fff;border:none;cursor:pointer;
+      /* rosa pastel FIXO, fora da paleta: na variação verde o --rose vira verde e este botão
+         saía num degradê verde→rosa. Assim ele fica igual nas duas páginas. */
+      background:linear-gradient(180deg,#ffd3e2,#ffbdd4);
+      color:#6d2340;border:1px solid #ffb0cc;cursor:pointer;
       font-family:inherit;font-size:15px;font-weight:700;letter-spacing:.02em;
       text-transform:uppercase;text-decoration:none;text-align:center;
       padding:14px 18px;border-radius:16px;
-      box-shadow:0 10px 22px -10px rgba(229,106,158,.65);
+      box-shadow:0 8px 18px -10px rgba(214,120,160,.55);
     }
     .cta-baby svg{ width:20px;height:20px;flex:0 0 auto;fill:currentColor; }
     .cta-baby:hover{ filter:brightness(1.04); }
-    .cta-baby:focus-visible{ outline:3px solid var(--rose);outline-offset:3px; }
+    .cta-baby:focus-visible{ outline:3px solid #d6789f;outline-offset:3px; }
 
     .proof{ font-size:13.5px;color:var(--muted);margin:16px 6px 0;line-height:1.5; }
     .proof b{ color:var(--plum); }
@@ -285,7 +287,7 @@
         ? crypto.randomUUID()
         : 'lead-' + Date.now() + '-' + Math.random().toString(36).slice(2);
       if (window.fbq) {
-        fbq('track', 'Lead', { content_name: 'grupo-principal-verde', content_category: 'geral' }, { eventID: eventId });
+        fbq('track', 'Lead', { content_name: 'grupo-principal-2', content_category: 'geral' }, { eventID: eventId });
       }
       return true;
     }
